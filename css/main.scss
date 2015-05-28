@@ -1,0 +1,70 @@
+// SASS VARIABLES 
+
+$blue:#406178;
+$gray:#D6D7D8;
+$yellow:#D1AA3A;
+
+/*=====----- UNIVERSAL STYLES -----=====*/
+
+nav {
+  box-shadow: none;
+  position: absolute;
+}
+
+#nav-trigger{
+  background-color:$gray;
+  border: 2px solid $blue;
+  height: 64px;
+  width: 64px;
+  margin-left: 1em;
+  margin-top: 1em;
+  i{
+    color: $blue;
+    font-size: 3.2em;
+  }
+}
+
+
+.main-body{
+  overflow: hidden;
+}
+.main-section{
+  background-image: url('../images/computer.jpg');
+  background-size: 100% 100%;
+}
+
+.section{
+  padding: 0;
+}
+
+.row{
+  margin-bottom: 0;
+}
+
+.top-row > .col,
+.bottom-row > .col{
+  height: 50vh;
+}
+
+
+/*===------ TOP ROW ------========*/
+
+.coder-block{
+  margin: 0 auto;
+}
+
+/*ABOUT PAGE*/
+.icon-block{
+  text-align: center;
+}
+.contact-me {
+  margin-top: 1rem;
+}
+
+/*====----MEDIA QUERIES----====*/
+
+@media (max-width: 600px){
+  .main-body{
+    overflow: auto;
+  }
+}
