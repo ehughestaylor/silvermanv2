@@ -4,7 +4,7 @@ nav {
   position: absolute; }
 
 .card {
-  min-height: 300px; }
+  height: 300px; }
 
 #nav-trigger {
   background-color: #D6D7D8;
@@ -16,6 +16,30 @@ nav {
   #nav-trigger i {
     color: #406178;
     font-size: 3.2em; }
+
+#slide-out {
+  webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent; }
+  #slide-out li a {
+    background-color: #406178;
+    color: white;
+    margin: 1em;
+    -vendor-animation-duration: 1s;
+    -vendor-animation-delay: 0s;
+    -vendor-animation-iteration-count: infinite; }
+
+#slide-out li:hover {
+  background-color: transparent; }
+  #slide-out li:hover a {
+    background-color: #D1AA3A; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 0.5;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
 
 .main-body {
   overflow: hidden; }
@@ -47,8 +71,11 @@ nav {
 .contact-me {
   margin-top: 1rem; }
 
+#topLeft {
+  background-image: url(../images/top-left.png); }
+
 .top-left .card-title {
-  background-color: #D6D7D8;
+  background-color: transparent;
   display: block;
   padding: 0.5em;
   padding-right: 2em; }
@@ -56,22 +83,33 @@ nav {
 .top-left .card-content .btn-large {
   background-color: #D1AA3A; }
 
+#topMiddle {
+  background-image: url(../images/sixReasons.png);
+  background-size: 100% 100%; }
+
 .top-middle .card-title {
   background-color: #406178;
   display: block;
   margin: 0;
   padding-right: 12px;
-  height: 72px;
+  min-height: 72px;
   line-height: 72px;
   font-size: 38px;
   color: #D1AA3A; }
+.top-middle .card-action .btn,
+.top-middle .card-action .btn-large {
+  background-color: #D1AA3A;
+  color: white; }
+
+#topRight {
+  background-image: url(../images/services.png); }
 
 .top-right .card-title {
   background-color: #406178;
   display: block;
   margin: 0;
   padding-right: 12px;
-  height: 72px;
+  min-height: 72px;
   line-height: 72px;
   font-size: 38px;
   color: #D1AA3A; }
@@ -87,12 +125,16 @@ nav {
       padding: 0 1em;
       text-align: center; }
 
+#bottomLeft {
+  background-image: url(../images/stanSpeaks.png); }
+
 .bottom-left .card-title {
   background-color: #406178;
   display: block;
   margin: 0;
   padding-right: 12px;
   font-size: 20px;
+  min-height: 72px;
   color: #D1AA3A; }
 .bottom-left .card-content {
   padding: 10px; }
@@ -106,10 +148,29 @@ nav {
       padding: 0 1em;
       text-align: center; }
 
-.bottom-middle .card-content .btn,
-.bottom-middle .card-content .btn-large {
-  background-color: #D1AA3A;
-  margin-top: 10px; }
+.bottom-middle .card-content {
+  padding: 8px; }
+  .bottom-middle .card-content .btn,
+  .bottom-middle .card-content .btn-large {
+    background-color: #D1AA3A;
+    margin-top: 10px; }
+.bottom-middle .contact-social {
+  padding: 0; }
+  .bottom-middle .contact-social ul {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0; }
+    .bottom-middle .contact-social ul li {
+      display: inline-block; }
+      .bottom-middle .contact-social ul li i {
+        color: #D1AA3A;
+        font-size: 2.2em;
+        margin: 0 0.3em;
+        padding: 0.2em; }
 
 #news .bottom-card {
   position: relative;
@@ -128,13 +189,30 @@ nav {
     border: 2px solid #D1AA3A;
     color: #D1AA3A; }
 #news .stories {
-  height: 200px; }
+  background-image: url(../images/background-pattern.png);
+  height: 170px; }
 #news .news-letter {
-  height: 100px; }
+  background-image: url(../images/background-pattern.png);
+  height: 108px; }
+  #news .news-letter .spanOne {
+    color: #D1AA3A;
+    font-size: 18px; }
+  #news .news-letter .spanTwo {
+    color: #406178;
+    font-size: 10px; }
+
+.top-row {
+  height: 50%; }
+
+.bottom-row {
+  height: 50%; }
 
 /*====----MEDIA QUERIES----====*/
 @media (max-width: 600px) {
   .main-body {
     overflow: auto; } }
+@media (max-width: 1000px) {
+  .card-content p {
+    font-size: 0.8em; } }
 
 /*# sourceMappingURL=main.css.map */

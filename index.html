@@ -3,6 +3,8 @@
     <head>
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/main.css">
 
       <!--Let browser know website is optimized for mobile-->
@@ -28,31 +30,32 @@
           <!--   Top Row   -->
           <div class="row top-row">
             <!-- SILVERMAN LEADERSHIP -->
-            <div class="col s12 m6 valign-wrapper">
+            <div class="col s12 m12 l6 valign-wrapper">
               <div class="icon-block valign">
-                <div class="card top-left">
+                <div id="topLeft" class="card top-left">
                  <span class="card-title black-text right-align"><img class="responsive-img" src="images/logo.png" alt=""></span>
                  <div class="card-content right-align">
-                    <h5>"Lead as you would like to be led"</h5>
-                    <p style="visibility:hidden;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit voluptates, accusantium amet facere ratione deleniti. Quidem minima soluta delectus expedita, nemo vel. Repudiandae molestiae quaerat perspiciatis, dicta enim, labore.</p>
+                    <h5 class="white-text">"AN EFFECTIVE LEADERSHIP CULTURE CAN HAVE A PROFOUND IMPACT ON RESULTS, WHETHER THE ORGANIZATION IS LARGE OR SMALL,FOR PROFIT OR NON-PROFIT."</h5>
                     <a href="" class="waves-effect waves-light btn btn-large"> Play Video </a>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- STAN SPEAKS -->
-            <div class="col s12 m3 valign-wrapper">
-              <div class="card top-middle">
-                 <span class="card-title center-align">Stan Speaks</span>
+            <!-- 6 REASONS -->
+            <div class="col s12 m12 l3 valign-wrapper">
+              <div id="topMiddle" class="card top-middle">
                   <div class="card-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aspernatur labore autem unde dolor ratione, incidunt facilis porro eaque cupiditate, perferendis facere distinctio praesentium suscipit id vitae laudantium assumenda. Tempore!</p>
-                  </div>           
-              </div>
+                    <p style="visibility:hidden;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perspiciatis maiores consequatur voluptatem, expedita, nihil inventore atque possimus animi quos excepturi et minus! Animi pariatur ipsum, recusandae quidem veniam similique!</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="" class="waves-effect waves-light btn btn-large">Click Here </a>
+                  </div>
+              </div>  
             </div>
 
             <!-- SERVICES -->
-            <div class="col s12 m3 valign-wrapper">
-              <div class="card top-right">
+            <div class="col s12 m12 l3 valign-wrapper">
+              <div id="topRight" class="card top-right">
                 <span class="card-title center-align">Services</span>
                   <div class="card-content">
                     <ul>
@@ -70,52 +73,48 @@
 
           <!-- bottom row start -->
           <div class="row bottom-row">
-            <!-- SIX REASONS -->
-            <div class="col s12 m3">
-              <div class="card bottom-left">
-                <span class="card-title center-align">6 Reasons Why Silverman Leadership is Valuable & Effective</span>
+            <!-- STAN SPEAKS -->
+            <div class="col s12 m12 l4">
+              <div id="bottomLeft" class="card bottom-left">
                   <div class="card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perspiciatis maiores consequatur voluptatem, expedita, nihil inventore atque possimus animi quos excepturi et minus! Animi pariatur ipsum, recusandae quidem veniam similique!
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href='#'>This is a link</a>
-                  </div>
-              </div>  
+
+                  </div>           
+              </div> 
             </div>
 
             <!-- CONTACT -->
-            <div class="col s12 m3">
-              <div class="card bottom-middle">
+            <div class="col s12 m12 l4">
+              <div class="card bottom-middle" style="padding:10px;">
                 <div class="icon-block">
                   <span class="card-title center-align"></span>
                     <div class="card-content">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perspiciatis maiores consequatur voluptatem, expedita, nihil inventore atque possimus animi quos excepturi et minus! Animi pariatur ipsum, recusandae quidem veniam similique!
-                      <a href="" class="btn btn-large">
-                        Contact Us
-                      </a>
+
 
                     </div>
                     <!-- social media -->
-                    <div class="card-action">
-                      <a href="#">This is a link</a>
-                      <a href='#'>This is a link</a>
+                    <div class="card-action contact-social">
+                      <ul>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-google"></i></li>
+                        <li><i class="fa fa-linkedin"></i></li>
+                      </ul>
                     </div>
                 </div>
               </div>
             </div>
             
             <!-- STORIES & NEWS LETTER -->
-            <div id="news" class="col s12 m6">
+            <div id="news" class="col s12 m12 l4">
               <!-- top row news stories -->
               <div class="row">
                 <div id="bottom-right-top" class="bottom-card stories valign-wrapper">
                   <div class="card-content valign">
                     <img src="images/coder.jpg" alt="" class="circle" height="120px" width="120px" style="float:left; margin:0.5em">
                     <span>Stan Silverman: How Not to Treat an Employee- A lesson from a Popeyes franchise</span>
-                    <div style="position:absolute; bottom:5%; right:10%;">
-                      <a href="" class="btn btn-large">Read Now</a>
-                      <a href="" class="btn btn-large btn-outline">See All</a>
+                    <div>
+                      <a href="" class="btn">Read Now</a>
+                      <a href="" class="btn btn-outline">See All</a>
                     </div>
                   </div>
                 </div>
@@ -123,11 +122,16 @@
               <!-- bottom row news letter sign up -->
               <div class="row">
                 <div id="bottom-right-bottom" class="bottom-card news-letter center-align">
+                  <span class="card-title center-align spanOne">Get Silverman Leadership delivered to your inbox</span>
+                  <br>
+                  <span class="card-title center-align spanTwo">Sign up below to stay up-to-date on all things executive leadership</span>
                   <div class="card-action">
-                    <div class="input-field col s12">
+                    <div class="input-field col s8">
                       <input id="email" type="email" class="validate">
                       <label for="email">Email</label>
-                      <a href="" class="btn">Sign Up</a>
+                    </div>
+                    <div class="col s4 input-field">
+                      <a style="font-size:0.8em;" href="" class="btn">Sign Up</a>
                     </div>
                   </div>
 
